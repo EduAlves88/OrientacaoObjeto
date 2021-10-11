@@ -13,19 +13,19 @@ namespace OrientacaoObjeto
             y = new Triangulo();
             //Entrada de Dados
             Console.WriteLine("Entre com as medidas do triângulo X:");
-            x.A = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
-            x.B = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
-            x.C = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            x.A = float.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            x.B = float.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            x.C = float.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
             //Entrada de Dados
             Console.WriteLine("Entre com as medidas do triângulo Y:");
-            y.A = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
-            y.B = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
-            y.C = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            y.A = float.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            y.B = float.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            y.C = float.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
             //Realização do cálculo
-            double p = (x.A + x.B + x.C) / 2.0;
-            double areaX = Math.Sqrt(p * (p - x.A) * (p - x.B) * (p - x.C));
-            p = (y.A + y.B + y.C) / 2.0;
-            double areaY = Math.Sqrt(p * (p - y.A) * (p - y.B) * (p - y.C));
+            float p = (float)((x.A + x.B + x.C) / 2.0);
+            float areaX = (float)Math.Sqrt(p * (p - x.A) * (p - x.B) * (p - x.C));
+            p = (float)((y.A + y.B + y.C) / 2.0);
+            float areaY = (float)Math.Sqrt(p * (p - y.A) * (p - y.B) * (p - y.C));
             //Print dos valores de área já calculados pela Classe
             Console.WriteLine("Área de X = " + areaX.ToString("F4", CultureInfo.InvariantCulture));
             Console.WriteLine("Área de Y = " + areaY.ToString("F4", CultureInfo.InvariantCulture));

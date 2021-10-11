@@ -3,13 +3,13 @@ namespace OrientacaoObjeto
 {
     class Triangulo
     {
-        public double A;
-        public double B;
-        public double C;
-        public double Area()
+        public float A;
+        public float B;
+        public float C;
+        public float Area()
         {
-            double p = (A + B + C) / 2.0;
-            return Math.Sqrt(p * (p - A) * (p - B) * (p - C));
+            float p = (float)((A + B + C) / 2.0);
+            return (float)Math.Sqrt(p * (p - A) * (p - B) * (p - C));
         }
     }
 }
